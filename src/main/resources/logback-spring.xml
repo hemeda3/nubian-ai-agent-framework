@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    
+    <!-- Increase logging levels for specific packages -->
+    <logger name="com.Nubian" level="DEBUG"/>
+    <logger name="org.springframework.web" level="DEBUG"/>
+    <logger name="org.springframework.core" level="DEBUG"/>
+    <logger name="org.springframework.context" level="DEBUG"/>
+    <logger name="org.springframework.beans" level="DEBUG"/>
+    <logger name="org.hibernate.SQL" level="DEBUG"/>
+    <logger name="org.hibernate.type.descriptor.sql" level="TRACE"/>
+    
+    <!-- Detailed request logging -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>
