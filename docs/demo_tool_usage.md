@@ -115,7 +115,7 @@ INFO ... c.s.ai.agentpress.service.ToolRegistry : Retrieved 2 OpenAPI schemas af
 
 In the provided logs for the demo run (`AgentPressDemo`), the final output includes:
 ```
-INFO ... com.Nubian.ai.agentpress.AgentPressDemo : Assistant Tool Calls: null
+INFO ... agentpress.com.nubian.ai.AgentPressDemo : Assistant Tool Calls: null
 ```
 This indicates that for the specific user message in that demo ("What is the capital of France?"), the LLM (gpt-4o) decided to answer directly without using any of the available tools (`search` or `getInfo`). If the query had been more complex or explicitly asked for a web search, the LLM might have chosen to use one of these tools, and the flow described above would have been triggered.
 

@@ -66,7 +66,7 @@ The system is built around several key components that interact in a layered arc
 
 ### Package Structure in Detail
 
-- **com.Nubian.ai**
+- **com.nubian.ai**
   - **agentpress**: Core framework components
     - **agent**: Framework-defined agent interfaces and base classes
     - **annotations**: Custom annotations for tools and other components
@@ -89,7 +89,7 @@ The system is built around several key components that interact in a layered arc
 
 The application uses Spring's dependency injection system:
 
-1. **Component Scanning**: Automatically detects components in the `com.Nubian.ai` package hierarchy
+1. **Component Scanning**: Automatically detects components in the `com.nubian.ai` package hierarchy
 2. **Configuration Classes**: Define beans and their relationships
 3. **Conditional Bean Creation**: Uses Spring profiles to create different beans based on environment
 
